@@ -99,13 +99,13 @@
 						<div class="col-md-10 lab-list-col-10">
 							
 							<!--edit -->
-<h1 class="text-h2-lightblue">Preparation of lattice and crystal models</h1><div class="content" id="experiment-article-section-4-content"><div class="divContent"><p>
-	<p><span style="font-size: medium; font-family: arial,helvetica,sans-serif; color: rgb(0, 0, 0);">       <strong><a href="https://www.microsoft.com/en-in/p/ball-stick/9nblggh4s694?ocid=badge&rtc=1#activetab=pivot:overviewtab" target="_blank">Link to download Ball & Stick software</a>   </strong> </span></p>
+<h1 class="text-h2-lightblue">Preparation of lattice and crystal models</h1><div class="content" id="experiment-article-section-4-content"><div class="divContent"><p><br>
+	<p><span style="font-size: medium; font-family: arial,helvetica,sans-serif; color: rgb(0, 0, 0);">       <strong><a href="https://www.microsoft.com/en-in/p/ball-stick/9nblggh4s694?ocid=badge&rtc=1#activetab=pivot:overviewtab" target="_blank">Click here to download Ball & Stick software</a>   </strong> </span></p>
 	<div class="box"style="border: 1px solid black">
 		<!-- Single button -->
 <div class="btn-group" style="padding-top: 10px; padding-left: 90px">
   <select id="groups">
-  <option value="1" >Orthogonal</option>
+  <option value="1" >Orthorhombic</option>
   <option value="2" selected>Cubic</option>
   <option value="3">Hexagonal</option>
   <option value="4">Monoclinic</option>
@@ -308,17 +308,15 @@ $('#sub_groups').change(function () {
 //measurements
 $(document).ready(function(){
 
-  //hides dropdown content
   $(".measurements").hide();
   
-  //unhides first option content
   $("#5").show();
   
-  //listen to dropdown for change
+  
   $("#sub_groups").change(function(){
-    //rehide content on change
+    
     $('.measurements').hide();
-    //unhides current item
+    
     $('#'+$(this).val()).show();
   });
   
